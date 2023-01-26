@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.products-page{
+    padding: 0 5%;
+}
+
+.search{
+    margin: 3rem 0;
+}
+
+.search input{
+    width: 35rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+input:is(::placeholder, :focus, :active ){
+    border: none;
+    outline: none;
+}
+
+.products-page #products{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.pd-card{
+    width: 350px;
+    height: auto;
+    padding: 2rem;
+    margin-top: 10%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 1px 5px 13px rgba(0, 0, 0,0.6);
+}
+
+.pd-card .image{
+    text-align: center;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.image img{
+    width: 10rem;
+}
+
+.pd-card h3{
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+.pd-card h4{
+    display: none;
+}
+
+.desc p{
+    margin-bottom: 1rem;
+}
+
+.pd-card span{
+    font-size: 1.3rem;
+    width: 100px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.btn{
+    text-align: center;
+    padding: 1rem;width: 10rem;
+    background-color: rgb(152, 202, 223);
+    border-radius: 4px;
+} 
