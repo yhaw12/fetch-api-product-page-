@@ -1,17 +1,24 @@
 // search function
 
-// let search = document.querySelector('.srch');
+let search = document.querySelector('.srch');
 
-// search.addEventListener('keyup',()=>{
-//     let output = search.value;
-
-//     if (output == `${values.category}`){
-//         document.getElementById('products').innerHTML = data.category
-//     }
-
-// });
+search.addEventListener('keyup',()=>{
+    let output = search.value.toLowerCase();
+    console.log(output)
 
 
+    if (data[title].toLowerCase().indexOf(output)>1){
+        document.getElementById('products').style.display = 'block';        
+    }
+    else{
+        document.getElementById('products').style.display = 'none';
+    }
+
+    
+
+    
+
+});
 
 
 let products = fetch('product.json')
